@@ -232,7 +232,7 @@ body {
     }
 
     .main-section {
-        width: 65%;
+        width: 70%;
     }
 
     #contact-form ul {
@@ -268,6 +268,10 @@ body {
     #contact-form ul {
       padding: 0;
       width: 100%
+    }
+    
+    .work:nth-child(odd) {
+      position: right;
     }
   
  }
@@ -324,6 +328,12 @@ body {
       #contact-form ul {
         padding: 0;
         width: 95%
+      }
+
+      .work {
+        position: relative;
+        width: 95%;
+        overflow: auto;
       }
   
   }
