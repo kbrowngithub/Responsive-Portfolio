@@ -184,6 +184,7 @@ body {
   
   #contact-form li {
     margin-bottom: 10px;
+    list-style: none;
   }
   
   label,
@@ -216,7 +217,7 @@ body {
     border: 0 none;
   }
   
-  @media screen and (max-width: 980px) {
+   @media screen and (max-width: 980px) {
     body {
         font-size: 16px;
         line-height: 24px;
@@ -232,6 +233,11 @@ body {
 
     .main-section {
         width: 65%;
+    }
+
+    #contact-form ul {
+      padding: 0;
+      width: 100%
     }
 
   }
@@ -252,6 +258,16 @@ body {
 
     .main-section {
         width: 95%;
+    }
+
+    .auth-image {
+      width: 50%;
+      margin-bottom: 10px;
+    }
+
+    #contact-form ul {
+      padding: 0;
+      width: 100%
     }
   
  }
@@ -296,16 +312,18 @@ body {
       }
 
       .auth-image {
-        margin: auto;
-        /* width: 200px;
-        height: auto;
-        margin-top: 10px;
-        margin-right: 25px; */
+        width: 95%;
+        margin-bottom: 10px;
       }
 
       h1 {
           width: 95%;
           margin-top: 0;
+      }
+
+      #contact-form ul {
+        padding: 0;
+        width: 95%
       }
   
   }
