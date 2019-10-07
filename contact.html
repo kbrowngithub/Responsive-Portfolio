@@ -1,41 +1,56 @@
 <!doctype html>
-
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <title>"Kevin Brown's Basic Portfolio"</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>Contact | Kevin Brown</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1 id="name">Kevin Brown</h1>
-        <nav id="navbar">
-            <a href="index.html">About&nbsp;&nbsp;&nbsp;</a> |
-            <a href="portfolio.html">&nbsp;&nbsp;&nbsp;Portfolio&nbsp;&nbsp;&nbsp;</a> |
-            <a href="contact.html">&nbsp;&nbsp;&nbsp;Contact</a>
-        </nav>
-    </header>
 
-    <main id="wrapper">
-        <content id="content">
-            <caption>
-                <h1 id="subtitle">Contact</h1>
-            </caption>
-            <hr/>
-            <form id="form" action="/action_page.php">
-                <p id="tname">Name: </p><br><input id="iname" type="text" name="name" placeholder="John Smith"><br>
-                <p id="temail">Email: </p><br><input id="iemail" type="text" name="email" placeholder="example@gmail.com"><br>
-                <p id="tmessage">Message: </p><br><input id="imessage" type="text" name="message"><br>
-                <input id="isubmit" type="submit" value="Submit">
-            </form>
-        </content>
-    </main>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Kevin Brown</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <footer id="footer">
-        <p id="copyright">Copyright &copy;</p>
-    </footer>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 
+    </div>
+  </footer>
 </body>
 
 </html>

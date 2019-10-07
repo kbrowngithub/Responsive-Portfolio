@@ -1,338 +1,311 @@
-* {
-    box-sizing: border-box;
-    color: #777777;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-    width: 1110px;
-    padding: 0;
-    margin: 0;
-    background-color: #ffffff;
-    border-color: #cccccc;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 body {
-    background-color: white;
-}
-
-p {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#name {
-    color: white;
-    background: #4aaaa5;
-    padding: 25px;
-    text-align: center;
-    float: left;
-    margin-left: 150px;
-    margin-bottom: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#navbar {
-    margin: 0;
-    float: right;
-    padding-right: 0;
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
-a:link, a:visited {
-    color: gray;
-    background-color: transparent;
-    text-decoration: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
-}
-
-#content{
-    height: 550px;
-    width: 960px;
-    background-color: #ffffff;
-    border-color: #dddddd;
-    margin-left: 150px;
-    margin-top: 30px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(201, 199, 199);
-    position: absolute;
-}
-
-/* Need to get clarification on width for ALL pages. If the same as AboutMe page then this section can 
-   go away. */
-#pcontent{
-    height: 600px;
-    width: 960px;
-    background-color: #ffffff;
-    border-color: #dddddd;
-    margin-left: 150px;
-    margin-top: 30px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(201, 199, 199);
-    position: absolute;
-}
-
-#subtitle {
+    line-height: 34px;
+    color: #777777;
+    background: url("../images/concrete-texture.png");
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* general */
+  
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p {
+    margin-bottom: 20px;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
     color: #4aaaa5;
-    background-color: white;
-    margin-left: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#KBPortrait {
+  }
+  
+  h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #dddddd;
+  }
+  
+  h2,
+  h3 {
+    font-size: 22px;
+  }
+  
+  /* header */
+  
+  #masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+  }
+  
+  #logo {
     float: left;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-
-#wrapper {
-    clear: both;
-    width: 100%;
-    height: 660px;
-    margin: 0;
-    padding: 0;
-    background-image: url("../images/concrete-texture.png");
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: rgb(173, 171, 171);
-    border-bottom-style: solid;
-    border-bottom-width: 6px;
-    border-bottom-color: #4aaaa5;
-    position: relative;
-}
-
-hr {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 1px;
-    color:#dddddd;
-}
-
-#footer {
-    clear: both;
-    width: 100%;
-    background-color: #666666;
-    font-size: 10px;
-    font-weight: bold;
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #ffffff;
     text-align: center;
-    margin: 0;
-    padding-top: 15px;
-    padding-bottom: 0;
-    border-color: #666666;
-    border-style: solid;
-    border-bottom-width: 1px;
-}
-
-#copyright {
-    color: rgb(204, 202, 202);
-}
-
-#form {
-    margin-left: auto;
-    margin-right: 0;
-}
-
-#tname, #temail, #tmessage {
-    float: left;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 6px;
-}
-
-#iname, #iemail {
-    width: 95%;
-    height: auto;
-    border-style: solid;
-    border-width: 1px;
-    color:#dddddd;
-    opacity: .5;
-    float: left;
-    margin-left: 20px;
-    margin-right: auto;
-}
-
-#imessage {
-    width: 95%;
-    height: 220px;
-    border-style: solid;
-    border-width: 1px;
-    color:#dddddd;
-    float: left;
-    margin-left: 20px;
-    margin-right: 0px;
+    text-decoration: none;
+    background: #4aaaa5;
+  }
+  
+  nav {
+    float: right;
+    margin-top: 25px;
+  }
+  
+  nav a {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
+  
+  nav a:first-child {
+    border-left: 0 none;
+  }
+  
+  /* footer */
+  
+  footer {
+    padding: 30px 0;
+    clear: both;
+    font-size: 12px;
+    color: #ffffff;
+    color: #cccccc;
+    text-align: center;
+    background: #666666;
+    border-top: 8px solid #4aaaa5;
+    height: 50px;
+  }
+  
+  h3, h2 {
+    padding-bottom: 20px;
     margin-bottom: 15px;
-}
-
-#isubmit {
-    color: white;
-    background: #4aaaa5;
-    float: left;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-right: 25px;
-    padding-left: 25px;
-    border: none;
-}
-
-.port1 {
-    float: left;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-    
-.port2 {
-    float: left;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
-.port3 {
-    clear: both;
-    float: left;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
-.port4 {
-    float: left;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
-.port5 {
-    clear: both;
-    float: left;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
-.text-block1 {
-    z-index: 1;
-    position: absolute;
-    top: 194px;
-    width: 180px;
-    text-align: center;
-    color: white;
-    background: #4aaaa5;
-    padding: 10px;
-}
-
-.text-block2 {
-    z-index: 1;
-    position: absolute;
-    top: 348px;
-    width: 180px;
-    text-align: center;
-    color: white;
-    background: #4aaaa5;
-    padding: 10px;
-}
-
-.text-block3 {
-    z-index: 1;
-    position: absolute;
-    top: 348px;
-    width: 180px;
-    text-align: center;
-    color: white;
-    background: #4aaaa5;
-    padding: 10px;
-}
-
-.text-block4 {
-    z-index: 1;
-    position: absolute;
-    top: 194px;
-    width: 180px;
-    text-align: center;
-    color: white;
-    background: #4aaaa5;
-    padding: 10px;
-}
-
-.text-block5 {
-    z-index: 1;
-    position: absolute;
-    top: 502px;
-    width: 180px;
-    text-align: center;
-    color: white;
-    background: #4aaaa5;
-    padding: 10px;
-}
-
-/* Media Queries */
-@media screen and (max-width: 980px) {
-    /* The body's bg color will be #333 */
-    body {
-      background-color: #333;
-    }
-  
-    /* The wrapper's width will be 600px */
-    .wrapper {
-      width: 600px;
-      margin: auto;
-    }
-
-    #sidebar {
-      float: left;
-      margin: auto;
-    }
-
-    #main-content {
-      margin: auto;
-    }
+    line-height: 22px;
+    border-bottom: 2px solid #eeeeee;
   }
   
+  /* main */
+  
+  #main-container {
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
+  }
+  
+  .main-section {
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+  }
+  
+  /* portfolio page */
+  
+  .work {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+  
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+  .work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+  
+  .auth-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+  
+  /* contact page */
+  
+  #contact-form ul {
+    margin-bottom: 20px;
+  }
+  
+  #contact-form li {
+    margin-bottom: 10px;
+  }
+  
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+  }
+  
+  @media screen and (max-width: 980px) {
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #masthead {
+        padding-right: 70px;
+    }
+
+    .container {
+        margin-left: 40px;
+    }
+
+    .main-section {
+        width: 65%;
+    }
+
+  }
+
   @media screen and (max-width: 768px) {
-    /* The body's bg color will be #333 */
     body {
-      background-color: #333;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #masthead {
+        padding-right: 70px;
+    }
+
+    .container {
+        margin-left: 20px;
+    }
+
+    .main-section {
+        width: 95%;
     }
   
-    /* The wrapper's width will be 600px */
-    .wrapper {
-      width: 600px;
-      margin: auto;
-    }
-
-    #sidebar {
-      float: left;
-      margin: auto;
-    }
-
-    #main-content {
-      margin: auto;
-    }
-  }
+ }
 
   @media screen and (max-width: 640px) {
-    /* The body's bg color will be #333 */
-    body {
-      background-color: #333;
+    #masthead {
+        position: static;
+        margin-bottom: 0;
+        padding: 0;
     }
+
+    .container {
+        width: 100%;
+        max-width: 620px;
+        margin: 0;
+        padding-top: 0;
+        clear: both;
+      }
+
+      #main-container {
+          width: 100%;
+          padding-top: 15px;
+          margin: auto;
+      }
+
+      .main-section {
+          width: 100%;
+          padding-right: 0;
+      }
+
+      #logo {
+        width: 100%;
+        height: 90px;
+
+      }
+
+      nav {
+        width: 100%;
+          text-align: center;
+          margin: 10 auto;
+            margin-bottom: 10px;
+      }
+
+      .auth-image {
+        margin: auto;
+        /* width: 200px;
+        height: auto;
+        margin-top: 10px;
+        margin-right: 25px; */
+      }
+
+      h1 {
+          width: 95%;
+          margin-top: 0;
+      }
   
-    /* The wrapper's width will be 600px */
-    .wrapper {
-      width: 600px;
-      margin: auto;
-    }
-
-    #sidebar {
-      float: left;
-      margin: auto;
-    }
-
-    #main-content {
-      margin: auto;
-    }
   }
