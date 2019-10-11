@@ -232,12 +232,16 @@ body {
     }
 
     .main-section {
-        width: 70%;
+        width: 100%;
     }
 
     #contact-form ul {
       padding: 0;
       width: 100%
+    }
+
+    .work:nth-child(odd) {
+      position: right;
     }
 
   }
@@ -257,7 +261,7 @@ body {
     }
 
     .main-section {
-        width: 95%;
+        width: 100%;
     }
 
     .auth-image {
@@ -269,6 +273,11 @@ body {
       padding: 0;
       width: 100%
     }
+    
+    /* .work {
+      max-width: 45%;
+      max-height: 45%;
+    } */
     
     .work:nth-child(odd) {
       position: right;
@@ -330,7 +339,7 @@ body {
         width: 95%
       }
 
-      .work {
+      .work{
         position: relative;
         width: 95%;
         overflow: auto;
