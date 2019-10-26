@@ -124,6 +124,7 @@ body {
     min-height: calc(100vh - 70px);
   }
   
+
   .main-section {
     float: left;
     width: 100%;
@@ -162,6 +163,13 @@ body {
     margin-bottom: 0;
     font-weight: 300;
     line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+
+  .workLink {
     color: #ffffff;
     text-align: center;
     background: #4aaaa5;
